@@ -366,8 +366,6 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     libchrome.vendor \
     nfc_nci.st21nfc.default \
-    NfcNci \
-    SecureElement \
     Tag
 
 PRODUCT_COPY_FILES += \
