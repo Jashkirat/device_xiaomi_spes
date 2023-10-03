@@ -44,8 +44,6 @@ public class HBMTileService extends TileService {
         HBM_ENABLE_KEY = DisplayNodes.getHbmEnableKey();
         HBM_NODE = DisplayNodes.getHbmNode();
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-        sharedPrefs.edit().putBoolean(HBM_ENABLE_KEY, false).commit();
-        FileUtils.writeLine(HBM_NODE, "0");
         updateUI(sharedPrefs.getBoolean(HBM_ENABLE_KEY, false));
     }
 
