@@ -17,4 +17,9 @@
     "target_path": "vendor/gapps",
     "remote": "crdroid-gitlab"
   },
+  {
+    "repository": "muralivijay/vendor_xiaomi_spes-misound",
+    "target_path": "vendor/xiaomi/spes-misound",
+    "branch": "lineage-20"
+  },
 ]
