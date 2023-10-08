@@ -11,12 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Enable Virtual A/B
-ifeq ($(wildcard vendor/gapps/arm64/arm64-vendor.mk),)
-  $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression_with_xor.mk)
-else
-  $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
-  $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
-endif
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
 PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
 # Inherit the proprietary files
