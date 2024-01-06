@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superiro_spes.mk
+    $(LOCAL_DIR)/superior_spes.mk
 
 COMMON_LUNCH_CHOICES := \
     superior_spes-user \
