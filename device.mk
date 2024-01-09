@@ -19,6 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 else
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression_with_xor.mk)
 endif
+PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/spes/spes-vendor.mk)
