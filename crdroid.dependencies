@@ -16,5 +16,10 @@
     "repository": "muralivijay/vendor_xiaomi_spes-misound",
     "target_path": "vendor/xiaomi/spes-misound",
     "branch": "lineage-20"
+  },
+  {
+    "repository": "MindTheGapps/vendor_gapps",
+    "target_path": "vendor/gapps",
+    "remote": "gitlab"
   }
 ]
