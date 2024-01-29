@@ -530,6 +530,3 @@ endif
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
-
-# Inherit MiSound
-$(call inherit-product-if-exists, vendor/xiaomi/spes-misound/MiSound.mk)
