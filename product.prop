@@ -37,7 +37,6 @@ bluetooth.profile.vcp.controller.enabled?=true
 ro.lmk.log_stats=true
 ro.lmk.kill_heaviest_task=false
 ro.lmk.kill_timeout_ms=15
-ro.lmk.use_minfree_levels=true
 
 # Display
 debug.sf.disable_backpressure=1
