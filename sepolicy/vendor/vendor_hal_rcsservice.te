@@ -1,0 +1,4 @@
+allow vendor_hal_rcsservice vendor_diag_device:chr_file { read write };
+allow vendor_hal_rcsservice vendor_hal_imscallinfo_hwservice:hwservice_manager find;
+allow vendor_hal_rcsservice vendor_hal_imsfactory_hwservice:hwservice_manager find;
+allow vendor_hal_rcsservice vendor_hal_imsrcsd_hwservice:hwservice_manager find;
