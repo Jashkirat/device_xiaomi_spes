@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022 The BananaDroid Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_spes.mk
+    $(LOCAL_DIR)/banana_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_spes-user \
-    superior_spes-userdebug \
-    superior_spes-eng
+    banana_spes-user \
+    banana_spes-userdebug \
+    banana_spes-eng

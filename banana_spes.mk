@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022 The BananaDroid Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,20 +11,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from spes/spesn device
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
-# Inherit some common SuperiorExtendedOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common BananaDroid stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Product Specifics
-PRODUCT_NAME := superior_spes
+PRODUCT_NAME := banana_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
 PRODUCT_MANUFACTURER := Xiaomi
-
-# Boot animaton
-TARGET_BOOT_ANIMATION_RES := 1080
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+#BananaDroid
+TARGET_BOOT_ANIMATION_RES := 1080
+BANANA_MAINTAINER := JassiV
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
