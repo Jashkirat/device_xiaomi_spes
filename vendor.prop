@@ -117,6 +117,9 @@ persist.vendor.qti.inputopts.enable=true
 persist.vendor.qti.inputopts.movetouchslop=0.6 
 ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 
+# FS-verity
+ro.apk_verity.mode=2
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
