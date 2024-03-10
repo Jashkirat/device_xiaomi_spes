@@ -16,6 +16,9 @@ rm -rf hardware/lineage/compat/Android.bp
 git clone https://github.com/sayann70/vendor_xiaomi_spes -b A14 vendor/xiaomi/spes
 git clone https://github.com/muralivijay/kernel_xiaomi_sm6225 kernel/xiaomi/sm6225
 
+# MiuiCamera
+git clone https://gitlab.com/ThankYouMario/proprietary_vendor_xiaomi_camera -b uvite-sm6225 vendor/xiaomi/camera
+
 # Sepolicy fix for imsrcsd
 echo -e "${color}Switch back to legacy imsrcsd sepolicy${end}"
 rm -rf device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/ims/imsservice.te
