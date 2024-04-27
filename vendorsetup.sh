@@ -17,7 +17,7 @@ git clone https://github.com/ofcsayan/vendor_xiaomi_spes -b 14 vendor/xiaomi/spe
 git clone https://github.com/muralivijay/kernel_xiaomi_sm6225 kernel/xiaomi/sm6225
 
 # MiuiCamera
-git clone https://gitlab.com/ThankYouMario/proprietary_vendor_xiaomi_camera -b uvite-sm6225 vendor/xiaomi/camera
+#git clone https://gitlab.com/ThankYouMario/proprietary_vendor_xiaomi_camera -b uvite-sm6225 vendor/xiaomi/camera
 
 # Sepolicy fix for imsrcsd
 echo -e "${color}Switch back to legacy imsrcsd sepolicy${end}"
