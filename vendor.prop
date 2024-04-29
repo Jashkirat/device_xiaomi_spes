@@ -280,7 +280,7 @@ persist.vendor.sys.cnd.iwlan=1
 ro.hardware.wlan.dbs=0
 
 # SoC
-ro.soc.manufacturer=Qualcomm
+ro.soc.manufacturer=QTI
 ro.soc.model=SM6225
 
 # Zygote
