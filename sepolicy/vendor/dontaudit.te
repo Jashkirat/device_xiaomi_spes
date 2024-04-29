@@ -21,6 +21,9 @@ dontaudit untrusted_app_all selinuxfs:file read;
 # all other no-context attempt by apps (as spotted on iQIYI)
 dontaudit untrusted_app_all sysfs_net:dir search;
 
+# Capture service
+dontaudit isolated_app content_capture_service:service_manager find;
+
 # clear up diagnostics denials on user build
 dontaudit {
   hal_audio_default
