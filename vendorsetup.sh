@@ -23,8 +23,3 @@ git clone https://github.com/muralivijay/kernel_xiaomi_sm6225 kernel/xiaomi/sm62
 echo -e "${color}Switch back to legacy imsrcsd sepolicy${end}"
 rm -rf device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/ims/imsservice.te
 cp device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/legacy-ims/hal_rcsservice.te device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/ims/hal_rcsservice.te
-
-# Custom KeyGen
-curl -O https://raw.githubusercontent.com/ofcsayan/Key-Gen-signed-script/main/generate_all_keys.sh
-chmod +x generate_all_keys.sh
-./generate_all_keys.sh
