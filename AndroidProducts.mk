@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_spes.mk
+    $(LOCAL_DIR)/pixelstar_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_spes-user \
-    blaze_spes-userdebug \
-    blaze_spes-eng
+    pixelstar_spes-user \
+    pixelstar_spes-userdebug \
+    pixelstar_spes-eng
