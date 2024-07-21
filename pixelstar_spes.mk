@@ -7,15 +7,16 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product-if-exists, vendor/google/gms/products/gms.mk)
 
 # Inherit from spes/spesn device
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
-# Inherit some common Project Infinity  stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff
+$(call inherit-product, vendor/pixelstar/config/common_full_phone.mk)
 
 # Product Specifics
-PRODUCT_NAME := infinity_spes
+PRODUCT_NAME := pixelstar_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
@@ -23,13 +24,12 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Boot animaton
+# PixelStar Specific Flags
+PIXELSTAR_BUILD_TYPE := official
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Infinity-X Specific Flags
-INFINITY_BUILD_TYPE := OFFICIAL
-INFINITY_MAINTAINER := JassiV×Sayan
-
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+USE_PIXEL_CHARGER := true
 
 
 # Overlay
@@ -45,6 +45,3 @@ BUILD_FINGERPRINT := "Redmi/spes/spes:13/TKQ1.221114.001/V14.0.5.0.TGCINXM:user/
 PRODUCT_SYSTEM_NAME := spes_global
 PRODUCT_SYSTEM_DEVICE := spes
 
-# Gapps
-WITH_GAPPS := true
-TARGET_BUILD_GOOGLE_TELEPHONY := true
