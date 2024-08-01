@@ -10,6 +10,8 @@ allow hal_power_default {
   vendor_sysfs_devfreq
 }:dir search;
 
+allow hal_power_default self:capability { sys_admin };
+
 allow hal_power_default {
   cgroup
   proc
