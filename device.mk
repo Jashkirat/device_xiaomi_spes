@@ -539,10 +539,8 @@ PRODUCT_PACKAGES += \
     libjsoncpp.vendor \
     libpng.vendor
 
-ifdef CR_VERSION
 PRODUCT_BOOT_JARS += \
     WfdCommon
-endif
 
 # XiaomiParts
 PRODUCT_PACKAGES += \
