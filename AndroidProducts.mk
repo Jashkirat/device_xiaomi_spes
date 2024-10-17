@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_spes.mk
+    $(LOCAL_DIR)/pixelstar_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_spes-user \
-    infinity_spes-userdebug \
-    infinity_spes-eng
+    pixelstar_spes-user \
+    pixelstar_spes-userdebug \
+    pixelstar_spes-eng
