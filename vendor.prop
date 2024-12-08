@@ -276,6 +276,9 @@ MultitouchMinDistance=1px
 TapInterval=1ms
 TapSlop=1px
 
+# Enable Incremental
+ro.incremental.enable=true
+
 # USB
 vendor.usb.diag.func.name=diag
 ro.usb.uvc.enabled=true
