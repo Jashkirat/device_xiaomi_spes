@@ -853,4 +853,12 @@
          manager will disable alpha trasformation in animations where not
          strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
+
+    <!-- Power Menu Reboot -->
+    <string-array translatable="false" name="config_rebootActionsList">
+        <item>restart</item>
+        <item>reboot_recovery</item>
+        <item>reboot_bootloader</item>
+        <item>reboot_fastboot</item>
+    </string-array>
 </resources>
