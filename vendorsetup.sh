@@ -9,9 +9,6 @@ sleep 1
 # Remove pixel headers to avoid conflicts
 rm -rf hardware/google/pixel/kernel_headers/Android.bp
 
-# Remove hardware/lineage/compat to avoid conflicts
-rm -rf hardware/lineage/compat/Android.bp
-
 # Kernel & Vendor Sources
 git clone https://github.com/sayann70/vendor_xiaomi_spes -b 15 vendor/xiaomi/spes
 git clone https://github.com/muralivijay/kernel_xiaomi_sm6225 kernel/xiaomi/sm6225
