@@ -36,4 +36,7 @@
 
     <!-- FPSInfoService FPS node file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
+
+    <!-- Show Force LTE_CA toggle -->
+    <bool name="config_showForceLteCaToggle" translatable="false">true</bool>
 </resources>
