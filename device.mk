@@ -215,6 +215,9 @@ PRODUCT_PACKAGES += \
     libvulkan
 
 PRODUCT_PACKAGES += \
+    gralloc.qcom
+
+PRODUCT_PACKAGES += \
     disable_configstore
 
 # Dolby
