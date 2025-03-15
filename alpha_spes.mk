@@ -11,11 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from spes/spesn device
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
-# Inherit some common Project Infinity-X stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some common Project alpha-X stuff.
+$(call inherit-product, vendor/alpha/config/common_full_phone.mk)
 
 # Product Specifics
-PRODUCT_NAME := infinity_spes
+PRODUCT_NAME := alpha_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
@@ -26,14 +26,13 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Boot Animaton
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Project InfinityX Flags
-WITH_GAPPS := true
-INFINITY_MAINTAINER := JASSI
-INFINITY_BUILD_TYPE := OFFICIAL
-TARGET_BUILD_GOOGLE_TELEPHONY := true
-TARGET_SHIPS_FULL_GAPPS := true
+# Project alphaX Flags
+ALPHA_MAINTAINER := JASSI
+ALPHA_BUILD_TYPE := OFFICIAL
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_BLUR := true
+TARGET_BUILD_PACKAGE := 3
+TARGET_INCLUDE_LAWNCHAIR := true
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage

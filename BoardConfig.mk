@@ -116,7 +116,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
-ifeq ($(PRODUCT_NAME), lineage_spes)
+ifeq ($(PRODUCT_NAME), alpha_spes)
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest-lineage.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix-lineage.xml
@@ -259,7 +259,7 @@ BOARD_VNDK_VERSION := current
 # Sepolicy
 include device/qcom/sepolicy_vndr/legacy-um/SEPolicy.mk
 
-include device/lineage/sepolicy/libperfmgr/sepolicy.mk
+include device/alpha/sepolicy/libperfmgr/sepolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 ifdef CR_VERSION
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private-cr
