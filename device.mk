@@ -457,6 +457,7 @@ PRODUCT_PACKAGES += \
     fstab.zram \
     init.qcom.power.rc \
     init.qcom.rc \
+    init.spes.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.stnfc.rc \
