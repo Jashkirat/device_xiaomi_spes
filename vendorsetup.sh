@@ -13,15 +13,15 @@ rm -rf hardware/google/pixel/kernel_headers/Android.bp
 rm -rf hardware/lineage/compat/Android.bp
 
 # Kernel & Vendor Sources
-git clone https://github.com/sayann70/vendor_xiaomi_spes -b 15 vendor/xiaomi/spes
-git clone https://github.com/muralivijay/kernel_xiaomi_sm6225 kernel/xiaomi/sm6225
+git clone --depth=1 https://github.com/sayann70/vendor_xiaomi_spes -b 15 vendor/xiaomi/spes
+git clone --depth=1 https://github.com/muralivijay/kernel_xiaomi_sm6225 kernel/xiaomi/sm6225
 
 # Hardware/Xiaomi
 rm -fr hardware/xiaomi
 git clone https://github.com/spes-development/hardware_xiaomi hardware/xiaomi
 
 # MiuiCamera(Lecia 5.0)
-git clone https://gitlab.com/ItzDFPlayer/vendor_xiaomi_miuicamera -b leica-5.0 vendor/xiaomi/miuicamera
+git clone --depth=1 https://gitlab.com/ItzDFPlayer/vendor_xiaomi_miuicamera -b leica-5.0 vendor/xiaomi/miuicamera
 
 # Sepolicy fix for imsrcsd
 echo -e "${color}Switch back to legacy imsrcsd sepolicy${end}"
