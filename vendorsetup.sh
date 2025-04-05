@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf hardware/xiaomi
+
 GREEN="\033[0;32m"
 YELLOW="\033[1;33m"
 END="\033[0m"

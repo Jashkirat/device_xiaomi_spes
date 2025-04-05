@@ -12,26 +12,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
 # Inherit some common Project Infinity-X stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/horizon/config/common_full_phone.mk)
 
 # Product Specifics
-PRODUCT_NAME := infinity_spes
+PRODUCT_NAME := horizon_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
 PRODUCT_MANUFACTURER := Xiaomi
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
+HORIZON_BUILD_TYPE := UNOFFICIAl
+HORIZON_MAINTAINER := JassiV07
+WITH_GMS := true
 # Boot Animaton
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Project InfinityX Flags
-WITH_GAPPS := true
-INFINITY_MAINTAINER := JASSI
-INFINITY_BUILD_TYPE := OFFICIAL
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_BLUR := true
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
