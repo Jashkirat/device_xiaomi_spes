@@ -154,6 +154,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     libpng.vendor \
+    libyuv.vendor \
     android.hardware.camera.device@3.6.vendor
 
 PRODUCT_PACKAGES += \
