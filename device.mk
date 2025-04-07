@@ -153,7 +153,8 @@ PRODUCT_PACKAGES += \
     libutilscallstack.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    libpng.vendor
+    libpng.vendor \
+    android.hardware.camera.device@3.6.vendor
 
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
