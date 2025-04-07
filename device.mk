@@ -500,6 +500,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.qti
 
+# UFFD GC
+OVERRIDE_ENABLE_UFFD_GC := false
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
