@@ -489,7 +489,8 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.qti
+    android.hardware.usb-service.qti \
+    android.hardware.usb@1.2.vendor
 
 # UFFD GC
 OVERRIDE_ENABLE_UFFD_GC := false
