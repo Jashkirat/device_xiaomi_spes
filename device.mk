@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio.sounddose-vendor-impl \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio-impl
 
@@ -133,8 +132,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1 \
     android.hardware.bluetooth@1.1.vendor \
-    android.hardware.bluetooth.a2dp@1.0 \
-    android.hardware.bluetooth.a2dp@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
@@ -217,9 +214,6 @@ PRODUCT_PACKAGES += \
     libvulkan
 
 PRODUCT_PACKAGES += \
-    gralloc.qcom
-
-PRODUCT_PACKAGES += \
     disable_configstore
 
 # Dolby
@@ -229,8 +223,7 @@ TARGET_EXCLUDES_AUDIOFX := true
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.4.vendor \
-    android.hardware.drm-service.clearkey \
-    libcrypto-v33
+    android.hardware.drm-service.clearkey
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -242,9 +235,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor \
-    libloc_net_iface \
-    libloc_net_iface.vendor
+    android.hardware.gnss@2.1.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.0.vendor \
