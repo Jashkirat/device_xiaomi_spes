@@ -54,19 +54,16 @@ fi
 function blob_fixup() {
     case "${1}" in
         vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
-            [ "$2" = "" ] && return 0
             "${SIGSCAN}" -p "13 0A 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
         vendor/lib64/camera/components/com.qti.node.mialgocontrol.so)
-            "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
-            ;;
-        vendor/lib64/camera/components/com.qti.node.mialgocontrol.so)
-            [ "$2" = "" ] && return 0
+            if ! readelf -d "${2}" | grep -q "libpiex_shim.so"; then
+                "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
+            fi
             llvm-strip --strip-debug  "${2}"
             ;;
         vendor/lib64/libwvhidl.so)
-            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "libcrypto-v34.so" "${2}"
-            "${PATCHELF}" --set-soname "libcrypto-v34.so" "${2}"
+            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v34.so" "${2}"
             ;;
     esac
 }
