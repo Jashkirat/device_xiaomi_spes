@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from miui_SPESGlobal_OS1.0.7.0.TGCMIXM_91ee997f22_13.0
+# All unpinned blobs below are extracted from spesn_eea_global_images_OS1.0.11.0.TGKEUXM_20250324.0000.00_13.0_eea_aa692107e0
 
 # ACDB
 vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Bluetooth_cal.acdb
@@ -579,8 +579,8 @@ vendor/etc/init/qdcmss.rc
 vendor/etc/SVIConfig.xml
 vendor/etc/dsi_panel_k7_38_0c_0a_fhdp_video_display_mi.xml
 vendor/etc/dsi_panel_k7_38_0c_0b_fhdp_video_display_mi.xml
-vendor/etc/qdcm_calib_data_k7_38_0c_0a_video_mode_fhdp_dsi_panel.xml|cd0e9be0c6a80374ea005bc153f135d1ef413ad8
-vendor/etc/qdcm_calib_data_k7_38_0c_0b_video_mode_fhdp_dsi_panel.xml|15c95cf48a213d0c66759a13fc4877a20a543a84
+vendor/etc/qdcm_calib_data_k7_38_0c_0a_video_mode_fhdp_dsi_panel.xml
+vendor/etc/qdcm_calib_data_k7_38_0c_0b_video_mode_fhdp_dsi_panel.xml
 
 # Displayfeature
 -vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
@@ -668,7 +668,6 @@ vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 -vendor/lib64/libsecureui.so
 -vendor/lib64/libsecureui_svcsock.so
 -vendor/lib64/libssd.so
--vendor/lib64/libspl.so
 -vendor/lib64/libtzdrmgenprov.so
 -vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
@@ -821,9 +820,6 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IMS
--system_ext/app/ImsRcsService/ImsRcsService.apk
--system_ext/app/uceShimService/uceShimService.apk
-system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
 system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar
