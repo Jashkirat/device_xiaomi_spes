@@ -32,4 +32,8 @@
 
     <!-- Wifi driver supports WPA3 Simultaneous Authentication of Equals (WPA3-SAE) for softap -->
     <bool name="config_wifi_softap_sae_supported">true</bool>
+
+    <!-- Enable concurrent restricted connectivity + internet connectivity
+         Note: this is conditional on the device supporting dual concurrent STAs. -->
+    <bool name="config_wifiMultiStaRestrictedConcurrencyEnabled">true</bool>
 </resources>
