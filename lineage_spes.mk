@@ -15,7 +15,7 @@ $(call inherit-product, device/xiaomi/spes/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit GApps if available
-$(call inherit-product-if-exists, vendor/gapps/common/common-vendor.mk)
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
 # Product Specifics
 PRODUCT_NAME := lineage_spes
