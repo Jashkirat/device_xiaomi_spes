@@ -19,6 +19,8 @@ git clone --depth=1 https://github.com/sayann70/kernel_xiaomi_spes -b 16 kernel/
 # Hardware/Xiaomi
 rm -fr hardware/xiaomi
 git clone https://github.com/spes-development/hardware_xiaomi hardware/xiaomi
+rm -fr hardware/xiaomi/vibrator/effect/Android.bp
+rm -fr hardware/xiaomi/hidl/touch/Android.bp
 
 # Debug Tools
 #git clone https://github.com/spes-development/hardware_samsung-extra_interfaces -b lineage-22 hardware/samsung-ext/interfaces
