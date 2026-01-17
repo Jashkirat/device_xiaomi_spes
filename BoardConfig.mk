@@ -174,7 +174,6 @@ TARGET_KERNEL_HEADERS := kernel/xiaomi/sm6225
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6225
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_LINUX_KERNEL_VERSION := 4.19
-TARGET_KERNEL_CLANG_VERSION := r522817
 
 # Lineage Health
 $(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
