@@ -34,6 +34,9 @@ bluetooth.profile.sap.server.enabled?=true
 bluetooth.profile.ccp.server.enabled?=true
 bluetooth.profile.vcp.controller.enabled?=true
 
+# eBPF
+ro.bpf.kver_override=5.10.239
+
 # Gboard configuration
 ro.com.google.ime.kb_pad_port_b=1
 
