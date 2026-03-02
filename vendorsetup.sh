@@ -23,7 +23,7 @@ rm -fr hardware/xiaomi/vibrator/effect/Android.bp
 rm -fr hardware/xiaomi/hidl/touch/Android.bp
 
 # Debug Tools
-#git clone https://github.com/spes-development/hardware_samsung-extra_interfaces -b lineage-22 hardware/samsung-ext/interfaces
+git clone https://github.com/Roynas-Android-Playground/hardware_samsung-extra_interfaces hardware/samsung-ext/interfaces
 
 # Sepolicy fix for imsrcsd
 echo -e "${color}Switch back to legacy imsrcsd sepolicy${end}"

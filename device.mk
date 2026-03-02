@@ -189,7 +189,7 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
 USE_DEX2OAT_DEBUG := false
 
 # Debug Tools
-#$(call inherit-product, hardware/samsung-ext/interfaces/debug-tools/debug.mk)
+$(call inherit-product, hardware/samsung-ext/interfaces/debug-tools/debug.mk)
 
 # Display
 PRODUCT_PACKAGES += \
