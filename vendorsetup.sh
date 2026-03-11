@@ -13,7 +13,7 @@ rm -rf hardware/google/pixel/kernel_headers/Android.bp
 rm -rf hardware/lineage/compat/Android.bp
 
 # Kernel & Vendor Sources
-git clone --depth=1 https://github.com/sayann70/vendor_xiaomi_spes -b 16 vendor/xiaomi/spes
+git clone --depth=1 https://github.com/sayann70/vendor_xiaomi_spes -b 16-QPR2 vendor/xiaomi/spes
 git clone --depth=1 https://github.com/sayann70/kernel_xiaomi_spes -b 16 kernel/xiaomi/sm6225
 
 # Hardware/Xiaomi
@@ -21,6 +21,7 @@ rm -fr hardware/xiaomi
 git clone https://github.com/spes-development/hardware_xiaomi hardware/xiaomi
 rm -fr hardware/xiaomi/vibrator/effect/Android.bp
 rm -fr hardware/xiaomi/hidl/touch/Android.bp
+rm -fr hardware/lineage/interfaces/health/aidl/default/Android.bp
 
 # Debug Tools
 git clone https://github.com/Roynas-Android-Playground/hardware_samsung-extra_interfaces hardware/samsung-ext/interfaces
