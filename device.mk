@@ -470,7 +470,7 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge
 
 PRODUCT_PACKAGES += \
-    sensors.xiaomi.v2:64
+    sensors.spes.v2:64
 
 # Sensors
 PRODUCT_COPY_FILES += \
