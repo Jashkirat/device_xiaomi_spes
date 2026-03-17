@@ -14,7 +14,7 @@ rm -rf hardware/lineage/compat/Android.bp
 
 # Kernel & Vendor Sources
 git clone --depth=1 https://github.com/sayann70/vendor_xiaomi_spes -b 16-QPR2 vendor/xiaomi/spes
-git clone --depth=1 https://github.com/sayann70/kernel_xiaomi_spes -b 16 kernel/xiaomi/sm6225
+git clone --depth=1 https://github.com/muralivijay/kernel_xiaomi_spes -b main-a16-sm8250-base kernel/xiaomi/sm6225
 
 # Hardware/Xiaomi
 rm -fr hardware/xiaomi
